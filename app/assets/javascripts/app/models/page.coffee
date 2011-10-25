@@ -3,7 +3,7 @@ class Page extends Spine.Model
   @extend Spine.Model.Ajax.Methods
   
   @fetch (params) ->
-    index  = @last()?.id or 0
+    index  = @count() or 0
     return false if index is @index
     @index = index
     

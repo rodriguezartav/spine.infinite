@@ -13,6 +13,10 @@ gem 'eco'
 gem 'spine-rails'
 gem 'thin'
 
+# mongoDB drivers and "activerecord"
+gem 'mongo_mapper'
+gem 'bson_ext'
+
 group :development do
   gem 'sqlite3'
   gem 'ruby-debug19', :require => 'ruby-debug'

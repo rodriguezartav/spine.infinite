@@ -5,11 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-
-1000.times do |i|
-  page = Page.new
-  page.name = "A Page"
-  page.save!
-  page.name = "A Page ##{page.id}"
-  page.save!
-end
+  
+  1000.times do |i|
+    page = Page.new
+    page.name = "A Page"
+    page.save!
+    page.name = "A Page ##{page.id}"
+    page.save!
+  end
+  puts "Succesfully created 1000 Demo Pages"
+  
