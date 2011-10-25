@@ -14,7 +14,7 @@ Originals files you need to inspect are ():
 * `app/assets/javascripts/app/controllers/pages.coffee`
 * `app/controllers/pages_controller.rb`
 
-But when using it with Mongo DB, also inspect ():
+In this version hen using it with Mongo DB, also inspect ():
 * `config/initializers/mongo.rb`
 * './GEMfile'
 * '/app/models/page.rb'
@@ -28,9 +28,9 @@ With important changes from original SQLITE version
 ##Usage ( UPDATED FOR MONGODB )
 
    bundle install --without production
-    
-    rails server
+   
+   rake db:seeds    
 
-    rake db:seeds
+   rails server thin
 
-    open http://localhost:3000
+   open http://localhost:3000
