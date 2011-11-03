@@ -10,7 +10,7 @@
     page = Page.new
     page.name = "A Page"
     page.save!
-    page.name = "A Page ##{page.id}"
+    page.name = "A Page ##{i}"
     page.save!
   end
   puts "Succesfully created 1000 Demo Pages"
